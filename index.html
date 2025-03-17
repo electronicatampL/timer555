@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Resistencias de Bandas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TIMER 555</h1>
+    <p>El timer 555 es un integrado de temporizador muy popular y versátil en electrónica,
+        usado principalmente para generar señales de tiempo precisas. Aquí tienes un resumen de su funcionamiento,
+        aplicaciones, terminales y tipos:</p>
+    <div class="image-container">
+        <img src="timer.JPG" alt="timer-imagen" class="timer">
+    </div>
+    <h2>FUNCIONAMIENTO</h2>
+    <p>El 555 puede funcionar en tres modos principales: monostable, astable y bistable.</p>
+    <ul>
+        <li>Monostable: En este modo, el 555 genera un solo pulso de salida de duración determinada por un resistor y un
+            condensador conectados externamente,
+            luego vuelve a su estado de reposo. Se utiliza para generar pulsos.</li>
+        <div class="image-container">
+            <img src="monostable.png" alt="Modo-monostable-del-555" class="Monostable">
+        </div>
+        <li>
+            Astable: En este modo, el 555 actúa como un generador de onda cuadrada continua,
+            alternando entre encenderse y apagarse, sin necesidad de una señal externa.
+        </li>
+        <div class="image-container">
+            <img src="astable.png" alt="ASTABLE-555" class="ASTABLE">
+        </div>
+        <li>
+            Biestable: En este modo, el 555 puede funcionar como un flip-flop o interruptor, donde la
+            salida cambia de estado entre alto y bajo dependiendo de las señales de activación.
+        </li>
+        <div class="image-container">
+            <img src="biestable.png" alt="Biestable-timer" class="Biestable">
+        </div>
+    </ul>
+    <h2>Terminales:</h2>
+    <p>El 555 tiene 8 terminales:</p>
+    <div class="image-container">
+        <img src="terminales timer.png" alt="terminales-timer" class="TERMINALES">
+    </div>
+    <ol>
+        <li>
+            Pin 1 (GND): Conectado a tierra (referencia 0V).
+        </li>
+        <li>
+            Pin 2 (Trigger): Este pin se usa para activar el temporizador.
+            En el modo monostable, el 555 genera una salida al recibir un pulso negativo en este pin.
+        </li>
+        <li>
+            Pin 3 (Output): La salida del 555,
+            que cambia de alto a bajo (o viceversa) según el modo de operación.
+        </li>
+        <li>
+            Pin 4 (Reset): Se utiliza para reiniciar el temporizador.
+            Si se aplica un pulso bajo, resetea el 555 y la salida se pone en bajo.
+        </li>
+        <li>
+            Pin 5 (Control): Se usa para controlar el voltaje de referencia interno.
+            Se conecta a un condensador de 10nF si no se va a usar.
+        </li>
+        <li>
+            Pin 6 (Threshold): En el modo astable y monostable,
+            este pin se conecta a un condensador y determina la duración de la señal de salida.
+        </li>
+        <li>
+            Pin 7 (Discharge): Se utiliza para descargar el condensador durante el ciclo
+            de temporizaci
+        <li>
+            Pin 8 (VCC): Conectado a la fuente de alimentación positiva (generalmente +5V a +15V).
+        </li>
+    </ol>
+    <br>
+    <h2>TIPOS</h2>
+    <p>Existen varios tipos de temporizadores 555, aunque los más comunes son:</p>
+    <ul>
+        <li>NE555: Es el modelo clásico, muy popular en electrónica.
+        </li>
+        <li>
+            LM555: Similar al NE555, fabricado por National Semiconductor
+            (ahora parte de Texas Instruments).
+        </li>
+        <li>
+            TLC555: Es una versión más eficiente y de bajo consumo,
+            fabricada por Texas Instruments.
+        </li>
+        <li>
+            C555: Versión de bajo costo, a veces usada en aplicaciones de menor precisión.
+        </li>
+    </ul>
+    <br>
+    <h2>APLICACIONES:</h2>
+    <p>El 555 se utiliza en variedad de circuitos debido a su versatilidad y facilidad de uso</p>
+    <ul>
+        <li>Generación de pulsos. En circuitos como generadores de reloj o en la modulación
+            de señales
+        </li>
+        <li>
+            Temporizadores: En circuitos donde se requiere un retardo específico, como en alarmas
+            o luces intermitentes.
+        </li>
+        <li>
+            Generación de señales cuadradas. Como osciladores en comunicaciones o pruebas de frecuencia
+        </li>
+        <li>
+            Controles de encendido y apagado: En aplicaciones como control de relés, motores o LEDs
+        </li>
+        <li>
+            Contadores y secuenciales: En circuitos digitales, donde se generan secuencias
+            de pulsos o cambios de estado,
+        </li>
+        <br>
+        <div class="image-container">
+            <img src="circuito timer.png" alt="CIRCUITO-TIMER" class="Circuito">
+        </div>
+        <p>
+            En resumen, el 555 es un componente clave para proyectos de temporización y generación de señales en
+            electrónica,
+            conocido por su simplicidad y eficacia.
+        </p>
+    </ul>
+</body>
